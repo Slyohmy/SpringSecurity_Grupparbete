@@ -1,8 +1,8 @@
-/*package com.example.springboot_grupparbete.Repositories;
+package com.example.springboot_grupparbete.Repositories;
 
 import com.example.springboot_grupparbete.Models.Användare;
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface UserRepository extends CrudRepository<Användare, Long> {
-
-}*/
+public interface UserRepository extends JpaRepository<Användare, Long> {
+    Användare findByUsername(String username);
+}
