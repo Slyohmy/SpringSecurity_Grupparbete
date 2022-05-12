@@ -15,11 +15,6 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class AuthenticationController {
 
-    @GetMapping("/")
-    public String home() {
-        return ("<h1>Välkommen!</h1>");
-    }
-
     @Autowired
     private AuthenticationManager authenticationManager;
 

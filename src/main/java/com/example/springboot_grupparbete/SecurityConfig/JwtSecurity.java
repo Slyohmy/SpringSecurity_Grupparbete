@@ -1,9 +1,11 @@
-package com.example.springboot_grupparbete;
+package com.example.springboot_grupparbete.SecurityConfig;
 
 import com.example.springboot_grupparbete.Filters.JwtRequestFilter;
 import com.example.springboot_grupparbete.Services.MyUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.core.annotation.Order;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -14,9 +16,10 @@ import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
-//annotationen berättar för spring security att det är en web security konfiguration
+@Configuration
 @EnableWebSecurity
-public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
+@Order(2)
+public class JwtSecurity extends WebSecurityConfigurerAdapter {
 
     @Bean
     @Override
@@ -35,22 +38,19 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
         auth.userDetailsService(myUserDetailsService);
     }
 
-
-    //metoden möjliggör autentisering med JWT men tar förnärvande bort /login /logout pathen.
-
-   @Override
+    @Override
     protected void configure(HttpSecurity http) throws Exception {
-        //http.httpBasic().and()
-        http.cors().and().csrf().disable()
+        http
                 .authorizeRequests().antMatchers("/authenticate").permitAll()
                 .anyRequest().authenticated()
                 .and().sessionManagement()
-                .sessionCreationPolicy(SessionCreationPolicy.STATELESS);
+                .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+                .and().csrf().disable();
         http.addFilterBefore(jwtRequestFilter, UsernamePasswordAuthenticationFilter.class);
     }
 
     @Bean
-    public PasswordEncoder getPasswordEncoder(){
+    public PasswordEncoder getPasswordEncoder() {
         return NoOpPasswordEncoder.getInstance();
     }
 }
