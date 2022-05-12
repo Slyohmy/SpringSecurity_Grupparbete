@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11cfed12-710c-4106-b166-7bb21e2e7bb7" name="Changes" comment="Initial commit">
+    <list default="true" id="11cfed12-710c-4106-b166-7bb21e2e7bb7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/RabbitMQ/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/RabbitMQ/EventProducerConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2022-04-18_12_04__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2022-04-18_12_04__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/Controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/Controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/Models/Användare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/Models/Användare.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/Repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/Repositories/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/SecurityConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/Services/MyUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/Services/MyUserDetailsService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +27,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Development" />
+        <entry key="$PROJECT_DIR$" value="UserRegistration" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -57,7 +55,7 @@
       <map>
         <entry key="com.haulmont.jpb.jpaInspector" value="false" />
         <entry key="com.haulmont.jpb.jpaPalette" value="false" />
-        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
       </map>
     </option>
   </component>
@@ -82,6 +80,10 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
