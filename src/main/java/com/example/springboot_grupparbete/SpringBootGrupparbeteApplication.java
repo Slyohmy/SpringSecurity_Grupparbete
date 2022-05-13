@@ -16,6 +16,7 @@ public class SpringBootGrupparbeteApplication {
         SpringApplication.run(SpringBootGrupparbeteApplication.class, args);
     }
 
+
     @Bean
     public CommandLineRunner initializeDB(KundRepository kundRepository) {
         if (kundRepository.count() == 0) {
@@ -39,7 +40,6 @@ public class SpringBootGrupparbeteApplication {
                 produktRepository.save(new Produkt("Asics", "Svart", "39", 700, 20));
             };
         }
-
         return null;
     }
 }

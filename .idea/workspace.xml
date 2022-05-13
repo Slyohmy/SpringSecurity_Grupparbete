@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11cfed12-710c-4106-b166-7bb21e2e7bb7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/RabbitMQ/CustomerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/RabbitMQ/EventProducerConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2022-04-18_12_04__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2022-04-18_12_04__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="11cfed12-710c-4106-b166-7bb21e2e7bb7" name="Changes" comment="Initial commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,16 +13,16 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="UserRegistration" />
+        <entry key="$PROJECT_DIR$" value="Development" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -55,7 +50,7 @@
       <map>
         <entry key="com.haulmont.jpb.jpaInspector" value="false" />
         <entry key="com.haulmont.jpb.jpaPalette" value="false" />
-        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
       </map>
     </option>
   </component>
@@ -80,10 +75,6 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -110,6 +101,22 @@
       <option name="PACKAGE_NAME" value="com.example.springboot_grupparbete.Controllers" />
       <option name="MAIN_CLASS_NAME" value="com.example.springboot_grupparbete.Controllers.BeställningControllerTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BeställningControllerTest.postBeställningTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpringBoot_Grupparbete" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.springboot_grupparbete.Controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.springboot_grupparbete.Controllers" />
+      <option name="MAIN_CLASS_NAME" value="com.example.springboot_grupparbete.Controllers.BeställningControllerTest" />
+      <option name="METHOD_NAME" value="postBeställningTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -144,26 +151,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringBootGrupparbeteApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SpringBoot_Grupparbete" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.springboot_grupparbete.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.springboot_grupparbete" />
-      <option name="MAIN_CLASS_NAME" value="com.example.springboot_grupparbete.SpringBootGrupparbeteApplicationTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="UserRepositoryTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SpringBoot_Grupparbete" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.springboot_grupparbete.*" />
+          <option name="PATTERN" value="com.example.springboot_grupparbete.SecurityConfig.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -183,11 +175,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserRepositoryTests" />
-        <item itemvalue="JUnit.ProduktControllerTest" />
         <item itemvalue="JUnit.KundControllerTest" />
         <item itemvalue="JUnit.BeställningControllerTest" />
-        <item itemvalue="JUnit.SpringBootGrupparbeteApplicationTests" />
+        <item itemvalue="JUnit.BeställningControllerTest.postBeställningTest" />
+        <item itemvalue="JUnit.UserRepositoryTests" />
+        <item itemvalue="JUnit.ProduktControllerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -222,7 +214,10 @@
       <workItem from="1652033017527" duration="9862000" />
       <workItem from="1652086893837" duration="22825000" />
       <workItem from="1652164227546" duration="19029000" />
-      <workItem from="1652259902044" duration="10369000" />
+      <workItem from="1652259902044" duration="21290000" />
+      <workItem from="1652342408040" duration="16690000" />
+      <workItem from="1652362405054" duration="1823000" />
+      <workItem from="1652380309707" duration="5648000" />
     </task>
     <task id="LOCAL−00001" summary="Created ProduktRepository">
       <created>1650276805013</created>
@@ -254,7 +249,13 @@
       <option name="presentableId" value="LOCAL−00005" />
       <updated>1652174334458</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL−00006" summary="Created Användare class model, UserRepository and added user sign up functionality to UserController">
+      <created>1652272204822</created>
+      <option name="number" value="LOCAL−00006" />
+      <option name="presentableId" value="LOCAL−00006" />
+      <updated>1652272204823</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -277,6 +278,8 @@
     <MESSAGE value="Fixed all date-related problems" />
     <MESSAGE value="Created a few controller tests and added getAllKunder method for KundController" />
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="Created Användare class model, UserRepository and added user sign up functionality in UserController" />
+    <MESSAGE value="Created Användare class model, UserRepository and added user sign up functionality to UserController" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created Användare class model, UserRepository and added user sign up functionality to UserController" />
   </component>
 </project>
