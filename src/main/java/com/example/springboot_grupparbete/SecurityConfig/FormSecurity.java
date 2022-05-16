@@ -51,9 +51,10 @@ class FormSecurity extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
-                .authorizeRequests().antMatchers("/**").permitAll()
+                .antMatcher("/login").authorizeRequests()
                 //endast nedanstående URL:er är tillåtna innan login
                 .antMatchers(HttpMethod.GET,
+                        "/login",
                         "/sign_up",
                         "/produkt",
                         "/process_register", "/webjars/**").permitAll()
@@ -63,10 +64,14 @@ class FormSecurity extends WebSecurityConfigurerAdapter {
                 .anyRequest().authenticated()
                 .and()
                 .formLogin()
+                .loginProcessingUrl("/login").permitAll()
                 .defaultSuccessUrl("/")
+                .and().logout().logoutUrl("/logout").logoutSuccessUrl("/login")
                 .permitAll()
                 .and()
-                .logout().logoutSuccessUrl("/").permitAll().and().csrf().disable();
+                .httpBasic()
+                .and()
+                .csrf().disable();
     }
 }
 

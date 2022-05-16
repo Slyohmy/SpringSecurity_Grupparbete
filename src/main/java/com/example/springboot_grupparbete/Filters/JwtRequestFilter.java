@@ -1,5 +1,6 @@
 package com.example.springboot_grupparbete.Filters;
 
+import com.example.springboot_grupparbete.Services.MyUserDetails;
 import com.example.springboot_grupparbete.Services.MyUserDetailsService;
 import com.example.springboot_grupparbete.Util.JwtUtil;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,7 +21,7 @@ import java.io.IOException;
 public class JwtRequestFilter extends OncePerRequestFilter {
 
     @Autowired
-    private MyUserDetailsService userDetailsService;
+    private MyUserDetailsService myUserDetailsService;
 
     @Autowired
     private JwtUtil jwtUtil;
@@ -42,12 +43,12 @@ public class JwtRequestFilter extends OncePerRequestFilter {
 
         if (username != null && SecurityContextHolder.getContext().getAuthentication() == null) {
 
-            UserDetails userDetails = this.userDetailsService.loadUserByUsername(username);
+            MyUserDetails myUserDetails = this.myUserDetailsService.loadUserByUsername(username);
 
-            if (jwtUtil.validateToken(jwt, userDetails)) {
+            if (jwtUtil.validateToken(jwt, myUserDetails)) {
 
                 UsernamePasswordAuthenticationToken usernamePasswordAuthenticationToken = new UsernamePasswordAuthenticationToken(
-                        userDetails, null, userDetails.getAuthorities());
+                        myUserDetails, null, myUserDetails.getAuthorities());
                 usernamePasswordAuthenticationToken
                         .setDetails(new WebAuthenticationDetailsSource().buildDetails(request));
                 SecurityContextHolder.getContext().setAuthentication(usernamePasswordAuthenticationToken);

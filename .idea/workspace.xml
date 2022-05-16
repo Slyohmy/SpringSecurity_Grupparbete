@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11cfed12-710c-4106-b166-7bb21e2e7bb7" name="Changes" comment="Initial commit" />
+    <list default="true" id="11cfed12-710c-4106-b166-7bb21e2e7bb7" name="Changes" comment="Added a homepage, login security, sign-in functionality connected to database and added stylesheet to respective endpoints">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/Controllers/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/Controllers/AuthenticationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/Controllers/KundController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/Controllers/KundController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/Controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/Controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/Filters/JwtRequestFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/Filters/JwtRequestFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/Models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/Models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/SecurityConfig/FormSecurity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/SecurityConfig/FormSecurity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/SecurityConfig/JwtSecurity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/SecurityConfig/JwtSecurity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/Services/MyUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/Services/MyUserDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,7 +34,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Development" />
+        <entry key="$PROJECT_DIR$" value="LoginFeatures" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -218,6 +230,8 @@
       <workItem from="1652342408040" duration="16690000" />
       <workItem from="1652362405054" duration="1823000" />
       <workItem from="1652380309707" duration="5648000" />
+      <workItem from="1652480875726" duration="615000" />
+      <workItem from="1652689569535" duration="5535000" />
     </task>
     <task id="LOCAL−00001" summary="Created ProduktRepository">
       <created>1650276805013</created>

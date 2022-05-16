@@ -19,7 +19,7 @@ public class UserController {
 
     @RequestMapping(path ="/sign_up")
     public String showRegistrationForm(Model model) {
-        model.addAttribute("user", new User());
+        model.addAttribute("user", new User("", ""));
         return "signup_form";
     }
 
@@ -60,8 +60,5 @@ public class UserController {
         log.info("User " + user + " was added to the database");
         return "User " + user + " is saved";
     }
-    @RequestMapping("/users")
-    public Iterable<Användare> getAllUsers() {
-        return userRepository.findAll();
-    }
+
 }*/
