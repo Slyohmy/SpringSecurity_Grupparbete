@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11cfed12-710c-4106-b166-7bb21e2e7bb7" name="Changes" comment="Adjusted login &amp; authentication settings">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_2022-05-12_22_43__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_2022-05-12_22_43__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/Controllers/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/Controllers/AuthenticationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/Controllers/ProduktController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/Controllers/ProduktController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/Models/AuthenticationRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/SecurityConfig/FormSecurity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/SecurityConfig/FormSecurity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/SecurityConfig/JwtSecurity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/SecurityConfig/JwtSecurity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/products.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/products.html" afterDir="false" />
-    </list>
+    <list default="true" id="11cfed12-710c-4106-b166-7bb21e2e7bb7" name="Changes" comment="Removed thymeleaf implementation from /produkt and added it to a seperate projekt(Frontend)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -231,7 +221,7 @@
       <workItem from="1652480875726" duration="615000" />
       <workItem from="1652689569535" duration="5535000" />
       <workItem from="1652771494946" duration="6444000" />
-      <workItem from="1652785029849" duration="13562000" />
+      <workItem from="1652785029849" duration="13938000" />
     </task>
     <task id="LOCAL−00001" summary="Created ProduktRepository">
       <created>1650276805013</created>
@@ -275,7 +265,13 @@
       <option name="presentableId" value="LOCAL−00007" />
       <updated>1652699255978</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL−00008" summary="Removed thymeleaf implementation from /produkt and added it to a seperate projekt(Frontend)">
+      <created>1652889601660</created>
+      <option name="number" value="LOCAL−00008" />
+      <option name="presentableId" value="LOCAL−00008" />
+      <updated>1652889601660</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -301,6 +297,7 @@
     <MESSAGE value="Created Användare class model, UserRepository and added user sign up functionality in UserController" />
     <MESSAGE value="Created Användare class model, UserRepository and added user sign up functionality to UserController" />
     <MESSAGE value="Adjusted login &amp; authentication settings" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adjusted login &amp; authentication settings" />
+    <MESSAGE value="Removed thymeleaf implementation from /produkt and added it to a seperate projekt(Frontend)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed thymeleaf implementation from /produkt and added it to a seperate projekt(Frontend)" />
   </component>
 </project>
