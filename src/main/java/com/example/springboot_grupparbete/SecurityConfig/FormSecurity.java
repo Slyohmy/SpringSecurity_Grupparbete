@@ -66,7 +66,6 @@ class FormSecurity extends WebSecurityConfigurerAdapter {
                 .formLogin()
                 .loginProcessingUrl("/login").permitAll()
                 .defaultSuccessUrl("/")
-                .and().logout().logoutUrl("/logout").logoutSuccessUrl("/login")
                 .permitAll()
                 .and()
                 .httpBasic()
@@ -74,4 +73,3 @@ class FormSecurity extends WebSecurityConfigurerAdapter {
                 .csrf().disable();
     }
 }
-

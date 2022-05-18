@@ -1,7 +1,7 @@
 package com.example.springboot_grupparbete.Controllers;
 
-import com.example.springboot_grupparbete.Models.AuthenticationRequest;
 import com.example.springboot_grupparbete.Models.AuthenticationResponse;
+import com.example.springboot_grupparbete.Models.User;
 import com.example.springboot_grupparbete.Services.MyUserDetailsService;
 import com.example.springboot_grupparbete.Util.JwtUtil;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,10 +25,11 @@ public class AuthenticationController {
     private MyUserDetailsService userDetailsService;
 
     @RequestMapping(value = "/login/authenticate", method = RequestMethod.POST)
-    public ResponseEntity<?> createAuthenticationToken(@RequestBody AuthenticationRequest authenticationRequest) throws Exception {
+    //@ModelAttribute istället för @RequestBody gör att man slipper skriva credentials i JSON format i Postman
+    public ResponseEntity<?> createAuthenticationToken(@ModelAttribute User user) throws Exception {
         try {
             authenticationManager.authenticate(
-                    new UsernamePasswordAuthenticationToken(authenticationRequest.getUsername(), authenticationRequest.getPassword())
+                    new UsernamePasswordAuthenticationToken(user.getUsername(), user.getPassword())
             );
         }
         catch (BadCredentialsException e) {
@@ -36,7 +37,7 @@ public class AuthenticationController {
         }
 
         final UserDetails userDetails = userDetailsService
-                .loadUserByUsername(authenticationRequest.getUsername());
+                .loadUserByUsername(user.getUsername());
 
         final String jwt = jwtTokenUtil.generateToken(userDetails);
 

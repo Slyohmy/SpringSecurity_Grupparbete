@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Optional;
 import java.util.Set;
 
-@Controller
+@RestController
 @RequestMapping(path ="/produkt")
 public class ProduktController {
 
@@ -26,6 +26,13 @@ public class ProduktController {
         this.beställningRepository = beställningRepository;
     }
 
+    //Använd koden nedan efter att vi har fått till frontend separat
+    @GetMapping("")
+    public Iterable<Produkt> getAllProdukter() {
+        return produktRepository.findAll();
+    }
+
+    /*
     @GetMapping("")
     public String getAll(Model model){
         Iterable<Produkt> p=produktRepository.findAll();
@@ -38,7 +45,7 @@ public class ProduktController {
         model.addAttribute("stock", "Lager");
 
         return "products";
-    }
+    }*/
 
     @GetMapping("{id}")
     public Optional<Produkt> getProduktById(@PathVariable Long id) {

@@ -1,8 +1,5 @@
 package com.example.springboot_grupparbete.Services;
 
-
-
-
 import com.example.springboot_grupparbete.Models.User;
 import com.example.springboot_grupparbete.Repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,11 +14,6 @@ public class MyUserDetailsService implements UserDetailsService {
 
     @Autowired
     private UserRepository userRepository;
-
-    /*@Override
-    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        return new User("simon", "password", new ArrayList<>());
-    }*/
 
     @Override
     public MyUserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
