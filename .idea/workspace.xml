@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11cfed12-710c-4106-b166-7bb21e2e7bb7" name="Changes" comment="Initial commit" />
+    <list default="true" id="11cfed12-710c-4106-b166-7bb21e2e7bb7" name="Changes" comment="Created a few controller tests and added getAllKunder method for KundController">
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/rabbitMq/RabbitMessageListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/rabbitMq/RabbitService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/rabbitMq/RabbitTestSenderRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/rabbitMq/RabbitWorkerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/SecurityConfig/FormSecurity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/SecurityConfig/FormSecurity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,6 +86,9 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -89,7 +103,14 @@
       <recent name="com.example.springboot_grupparbete.Controllers" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.SpringBootGrupparbeteApplication">
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Docker.docker-compose.yml.rabbitmq: Compose Deployment">
     <configuration name="BeställningControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SpringBoot_Grupparbete" />
       <extension name="coverage">
@@ -101,22 +122,6 @@
       <option name="PACKAGE_NAME" value="com.example.springboot_grupparbete.Controllers" />
       <option name="MAIN_CLASS_NAME" value="com.example.springboot_grupparbete.Controllers.BeställningControllerTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BeställningControllerTest.postBeställningTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SpringBoot_Grupparbete" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.springboot_grupparbete.Controllers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.springboot_grupparbete.Controllers" />
-      <option name="MAIN_CLASS_NAME" value="com.example.springboot_grupparbete.Controllers.BeställningControllerTest" />
-      <option name="METHOD_NAME" value="postBeställningTest" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -136,50 +141,64 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProduktControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SpringBoot_Grupparbete" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.springboot_grupparbete.Controllers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.springboot_grupparbete.Controllers" />
-      <option name="MAIN_CLASS_NAME" value="com.example.springboot_grupparbete.Controllers.ProduktControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserRepositoryTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SpringBoot_Grupparbete" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.springboot_grupparbete.SecurityConfig.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.springboot_grupparbete" />
-      <option name="MAIN_CLASS_NAME" value="com.example.springboot_grupparbete.UserRepositoryTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SpringBootGrupparbeteApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="SpringBoot_Grupparbete" />
+      <module name="SpringSecurity_Grupparbete" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.springboot_grupparbete.SpringBootGrupparbeteApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SHORTEN_COMMAND_LINE" value="NONE" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.api: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="api" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.rabbitmq: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="rabbitmq" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.BeställningControllerTest" />
+      <item itemvalue="JUnit.KundControllerTest" />
+      <item itemvalue="Spring Boot.SpringBootGrupparbeteApplication" />
+      <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.api: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.rabbitmq: Compose Deployment" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.yml.rabbitmq: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.api: Compose Deployment" />
         <item itemvalue="JUnit.KundControllerTest" />
         <item itemvalue="JUnit.BeställningControllerTest" />
-        <item itemvalue="JUnit.BeställningControllerTest.postBeställningTest" />
-        <item itemvalue="JUnit.UserRepositoryTests" />
-        <item itemvalue="JUnit.ProduktControllerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -218,6 +237,8 @@
       <workItem from="1652342408040" duration="16690000" />
       <workItem from="1652362405054" duration="1823000" />
       <workItem from="1652380309707" duration="5648000" />
+      <workItem from="1652771644678" duration="6494000" />
+      <workItem from="1652944024280" duration="6228000" />
     </task>
     <task id="LOCAL−00001" summary="Created ProduktRepository">
       <created>1650276805013</created>

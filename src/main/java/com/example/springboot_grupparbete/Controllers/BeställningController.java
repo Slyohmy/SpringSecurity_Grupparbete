@@ -51,6 +51,7 @@ public class BeställningController {
             b.getProdukter().add(p);
             produktRepository.save(p);
             beställningRepository.save(b);
+
             return b;
         }
     }

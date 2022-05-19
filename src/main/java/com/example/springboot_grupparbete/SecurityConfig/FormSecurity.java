@@ -48,25 +48,25 @@ class FormSecurity extends WebSecurityConfigurerAdapter {
         auth.authenticationProvider(authenticationProvider());
     }
 
-    @Override
-    protected void configure(HttpSecurity http) throws Exception {
-        http
-                .authorizeRequests().antMatchers("/login").permitAll()
-                //endast nedanstående URL:er är tillåtna innan login
-                .antMatchers(HttpMethod.GET,
-                        "/sign_up",
-                        "/produkt",
-                        "/process_register", "/webjars/**").permitAll()
-                .antMatchers(HttpMethod.POST,
-                        "/process_register", "/webjars/**").permitAll()
-                //authenticated bestämmer att man endast får komma åt URL:erna ovan
-                .anyRequest().authenticated()
-                .and()
-                .formLogin()
-                .defaultSuccessUrl("/")
-                .permitAll()
-                .and()
-                .logout().logoutSuccessUrl("/").permitAll().and().csrf().disable();
-    }
+//    @Override
+//    protected void configure(HttpSecurity http) throws Exception {
+//        http
+//                .authorizeRequests().antMatchers("/login").permitAll()
+//                //endast nedanstående URL:er är tillåtna innan login
+//                .antMatchers(HttpMethod.GET,
+//                        "/sign_up",
+//                        "/produkt",
+//                        "/process_register", "/webjars/**").permitAll()
+//                .antMatchers(HttpMethod.POST,
+//                        "/process_register", "/webjars/**").permitAll()
+//                //authenticated bestämmer att man endast får komma åt URL:erna ovan
+//                .anyRequest().authenticated()
+//                .and()
+//                .formLogin()
+//                .defaultSuccessUrl("/")
+//                .permitAll()
+//                .and()
+//                .logout().logoutSuccessUrl("/").permitAll().and().csrf().disable();
+//    }
 }
 
