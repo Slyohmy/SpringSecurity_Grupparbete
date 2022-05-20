@@ -4,7 +4,44 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11cfed12-710c-4106-b166-7bb21e2e7bb7" name="Changes" comment="Removed thymeleaf implementation from /produkt and added it to a seperate projekt(Frontend)" />
+    <list default="true" id="11cfed12-710c-4106-b166-7bb21e2e7bb7" name="Changes" comment="Removed thymeleaf implementation from /produkt and added it to a seperate projekt(Frontend)">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/api/Jwt/JwtSecurityTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_2022-05-12_22_43_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_2022-05-12_22_43__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/Controllers/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/api/Controllers/AuthenticationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/Controllers/BeställningController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/api/Controllers/BeställningController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/Controllers/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/api/Controllers/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/Controllers/KundController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/api/Controllers/KundController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/Controllers/ProduktController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/api/Controllers/ProduktController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/Controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/api/Controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/Filters/JwtRequestFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/api/Filters/JwtRequestFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/Models/AuthenticationResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/api/Models/AuthenticationResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/Models/Beställning.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/api/Models/Beställning.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/Models/Kund.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/api/Models/Kund.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/Models/Produkt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/api/Models/Produkt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/Models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/api/Models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/RabbitMQ/CustomMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/api/RabbitMQ/CustomMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/RabbitMQ/MQConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/api/RabbitMQ/MQConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/RabbitMQ/MessagePublisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/api/RabbitMQ/MessagePublisher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/Repositories/BeställningRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/api/Repositories/BeställningRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/Repositories/KundRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/api/Repositories/KundRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/Repositories/ProduktRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/api/Repositories/ProduktRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/Repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/api/Repositories/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/SecurityConfig/FormSecurity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/api/SecurityConfig/FormSecurity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/SecurityConfig/JwtSecurity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/api/SecurityConfig/JwtSecurity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/Services/MyUserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/api/Services/MyUserDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/Services/MyUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/api/Services/MyUserDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/SpringBootGrupparbeteApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/api/SpringBootGrupparbeteApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/Util/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/api/Util/JwtUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/springboot_grupparbete/Controllers/BeställningControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/api/Controllers/BeställningControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/springboot_grupparbete/Controllers/KundControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/api/Controllers/KundControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/springboot_grupparbete/Controllers/ProduktControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/api/Controllers/ProduktControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/springboot_grupparbete/SpringBootGrupparbeteApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/api/SpringBootGrupparbeteApplicationTests.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,8 +51,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -36,7 +73,7 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/main/java/com/example/springboot_grupparbete/Controllers/KundController.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/example/api/Controllers/KundController.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
@@ -89,97 +126,99 @@
       <recent name="com.example.springboot_grupparbete.Controllers" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.SpringBootGrupparbeteApplication">
-    <configuration name="BeställningControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SpringBoot_Grupparbete" />
+  <component name="RunManager" selected="JUnit.JwtSecurityTest.existentUserCanGetTokenAndAuthentication">
+    <configuration name="JwtSecurityTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Api" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.springboot_grupparbete.Controllers.*" />
+          <option name="PATTERN" value="com.example.api.Jwt.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.springboot_grupparbete.Controllers" />
-      <option name="MAIN_CLASS_NAME" value="com.example.springboot_grupparbete.Controllers.BeställningControllerTest" />
+      <option name="PACKAGE_NAME" value="com.example.api.Jwt" />
+      <option name="MAIN_CLASS_NAME" value="com.example.api.Jwt.JwtSecurityTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BeställningControllerTest.postBeställningTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SpringBoot_Grupparbete" />
+    <configuration name="JwtSecurityTest.existentUserCanGetTokenAndAuthentication" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Api" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.springboot_grupparbete.Controllers.*" />
+          <option name="PATTERN" value="com.example.api.Jwt.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.springboot_grupparbete.Controllers" />
-      <option name="MAIN_CLASS_NAME" value="com.example.springboot_grupparbete.Controllers.BeställningControllerTest" />
-      <option name="METHOD_NAME" value="postBeställningTest" />
+      <option name="PACKAGE_NAME" value="com.example.api.Jwt" />
+      <option name="MAIN_CLASS_NAME" value="com.example.api.Jwt.JwtSecurityTest" />
+      <option name="METHOD_NAME" value="existentUserCanGetTokenAndAuthentication" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KundControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SpringBoot_Grupparbete" />
+    <configuration name="JwtSecurityTest.getCustomersWithJWT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Api" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.springboot_grupparbete.Controllers.*" />
+          <option name="PATTERN" value="com.example.api.Jwt.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.springboot_grupparbete.Controllers" />
-      <option name="MAIN_CLASS_NAME" value="com.example.springboot_grupparbete.Controllers.KundControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.example.api.Jwt" />
+      <option name="MAIN_CLASS_NAME" value="com.example.api.Jwt.JwtSecurityTest" />
+      <option name="METHOD_NAME" value="getCustomersWithJWT" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProduktControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SpringBoot_Grupparbete" />
+    <configuration name="JwtSecurityTest.getCustomersWithoutJWT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Api" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.springboot_grupparbete.Controllers.*" />
+          <option name="PATTERN" value="com.example.api.Jwt.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.springboot_grupparbete.Controllers" />
-      <option name="MAIN_CLASS_NAME" value="com.example.springboot_grupparbete.Controllers.ProduktControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.example.api.Jwt" />
+      <option name="MAIN_CLASS_NAME" value="com.example.api.Jwt.JwtSecurityTest" />
+      <option name="METHOD_NAME" value="getCustomersWithoutJWT" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserRepositoryTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SpringBoot_Grupparbete" />
+    <configuration name="JwtTesting" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Api" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.springboot_grupparbete.SecurityConfig.*" />
+          <option name="PATTERN" value="com.example.api.Jwt.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.springboot_grupparbete" />
-      <option name="MAIN_CLASS_NAME" value="com.example.springboot_grupparbete.UserRepositoryTests" />
+      <option name="PACKAGE_NAME" value="com.example.api.Jwt" />
+      <option name="MAIN_CLASS_NAME" value="com.example.api.Jwt.JwtTesting" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="SpringBootGrupparbeteApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="SpringBoot_Grupparbete" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.springboot_grupparbete.SpringBootGrupparbeteApplication" />
+      <module name="Api" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.api.SpringBootGrupparbeteApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.KundControllerTest" />
-        <item itemvalue="JUnit.BeställningControllerTest" />
-        <item itemvalue="JUnit.BeställningControllerTest.postBeställningTest" />
-        <item itemvalue="JUnit.UserRepositoryTests" />
-        <item itemvalue="JUnit.ProduktControllerTest" />
+        <item itemvalue="JUnit.JwtSecurityTest.existentUserCanGetTokenAndAuthentication" />
+        <item itemvalue="JUnit.JwtSecurityTest" />
+        <item itemvalue="JUnit.JwtTesting" />
+        <item itemvalue="JUnit.JwtSecurityTest.getCustomersWithJWT" />
+        <item itemvalue="JUnit.JwtSecurityTest.getCustomersWithoutJWT" />
       </list>
     </recent_temporary>
   </component>
@@ -222,6 +261,10 @@
       <workItem from="1652689569535" duration="5535000" />
       <workItem from="1652771494946" duration="6444000" />
       <workItem from="1652785029849" duration="13938000" />
+      <workItem from="1652906914865" duration="1217000" />
+      <workItem from="1652946318104" duration="34414000" />
+      <workItem from="1653002411960" duration="1358000" />
+      <workItem from="1653035731339" duration="4228000" />
     </task>
     <task id="LOCAL−00001" summary="Created ProduktRepository">
       <created>1650276805013</created>
