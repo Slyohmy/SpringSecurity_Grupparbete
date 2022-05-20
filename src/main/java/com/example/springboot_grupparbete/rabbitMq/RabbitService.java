@@ -16,7 +16,7 @@ import org.springframework.stereotype.Service;
 @Profile("!test")
 @Service
 public class RabbitService {
-    public static final String exchangeName = "trava-exchange";
+    public static final String exchangeName = "webshop_grupparbete-exchange";
     public static final String queueName = "api";
     public static final String topic = "api.#";
 

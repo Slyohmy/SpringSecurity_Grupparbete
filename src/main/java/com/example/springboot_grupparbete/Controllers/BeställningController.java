@@ -6,6 +6,8 @@ import com.example.springboot_grupparbete.Models.Produkt;
 import com.example.springboot_grupparbete.Repositories.BeställningRepository;
 import com.example.springboot_grupparbete.Repositories.KundRepository;
 import com.example.springboot_grupparbete.Repositories.ProduktRepository;
+import com.example.springboot_grupparbete.rabbitMq.RabbitWorkerService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Optional;
@@ -13,6 +15,9 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/beställning")
 public class BeställningController {
+    @Autowired
+    RabbitWorkerService rabbitWorkerService;
+
 
     private final BeställningRepository beställningRepository;
     private final KundRepository kundRepository;
@@ -51,7 +56,12 @@ public class BeställningController {
             b.getProdukter().add(p);
             produktRepository.save(p);
             beställningRepository.save(b);
-
+            String info = b.toString();
+            try {
+                rabbitWorkerService.sendJob();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
             return b;
         }
     }

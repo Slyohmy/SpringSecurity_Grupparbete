@@ -23,6 +23,7 @@ public class RabbitWorkerService {
         var job = new Job("Test", 555);
         var payload = objectMapper.writeValueAsBytes(job);
         rabbitTemplate.convertAndSend(RabbitService.exchangeName, "mailservice.job", payload);
+        System.out.println("Has send job");
     }
 
 }
