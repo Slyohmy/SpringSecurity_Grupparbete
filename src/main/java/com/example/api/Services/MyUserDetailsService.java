@@ -7,15 +7,11 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-
 @Service
 public class MyUserDetailsService implements UserDetailsService {
 
     @Autowired
     private UserRepository userRepository;
-
-    record CreateAccessTokenDto(String username, String password) {
-    }
 
     @Override
     public MyUserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
@@ -25,5 +21,4 @@ public class MyUserDetailsService implements UserDetailsService {
         }
         return new MyUserDetails(user);
     }
-
 }

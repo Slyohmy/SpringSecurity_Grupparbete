@@ -13,6 +13,7 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.config.http.SessionCreationPolicy;
+import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 @Configuration
@@ -46,9 +47,13 @@ public class JwtSecurity extends WebSecurityConfigurerAdapter {
                         "/login",
                         "/sign_up",
                         "/produkt/**",
-                        "/process_register", "/webjars/**", "/authenticate", "/").permitAll()
+                        "/process_register",
+                        "/webjars/**",
+                        "/").permitAll()
                 .antMatchers(HttpMethod.POST,
-                        "/process_register", "/webjars/**", "/login/authenticate", "/produkt/**").permitAll()
+                        "/process_register",
+                        "/webjars/**",
+                        "/login/authenticate").permitAll()
                 .anyRequest().authenticated()
                 .and().sessionManagement()
                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS)

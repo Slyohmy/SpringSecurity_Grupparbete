@@ -59,7 +59,7 @@ class FormSecurity extends WebSecurityConfigurerAdapter {
                         "/produkt/**",
                         "/process_register", "/webjars/**").permitAll()
                 .antMatchers(HttpMethod.POST,
-                        "/process_register", "/webjars/**", "/produkt/**","/login/authenticate").permitAll()
+                        "/process_register", "/webjars/**").permitAll()
                 //authenticated bestämmer att man endast får komma åt URL:erna ovan
                 .anyRequest().authenticated()
                 .and()
