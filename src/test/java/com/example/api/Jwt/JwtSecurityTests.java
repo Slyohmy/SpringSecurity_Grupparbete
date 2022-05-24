@@ -37,11 +37,9 @@ public class JwtSecurityTests {
                         .headers(httpHeaders)
                 .content(body))
                 .andReturn();
-        String jwt = result.getResponse().getContentAsString();
+        String jwt = result.getResponse().getContentAsString().split("\"jwt\":\"")[1].trim();
 
-        String token = jwt.split("\"jwt\":\"")[1].trim();
-
-        httpHeaders.add("Authorization", "Bearer " + token);
+        httpHeaders.add("Authorization", "Bearer " + jwt);
 
 
         mockMvc.perform(MockMvcRequestBuilders.get("http://localhost:8080/kund")

@@ -50,8 +50,7 @@ public class JwtSecurity extends WebSecurityConfigurerAdapter {
                         "/produkt/**",
                         "/process_register",
                         "/webjars/**",
-                        "/").permitAll()
-                        "/produkt",
+                        "/",
                         "/process_register", "/webjars/**", "/authenticate", "/",
                         "/v3/api-docs",
                         "/swagger-ui.html").permitAll()

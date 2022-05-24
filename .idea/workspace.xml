@@ -5,14 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11cfed12-710c-4106-b166-7bb21e2e7bb7" name="Changes" comment="Added security tests">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_0_9_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/api/SecurityConfig/FormSecurity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/api/SecurityConfig/FormSecurity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/api/SecurityConfig/JwtSecurity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/api/SecurityConfig/JwtSecurity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/api/Services/MyUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/api/Services/MyUserDetailsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/api/Util/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/api/Util/JwtUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/api/Jwt/JwtSecurityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/api/Jwt/JwtSecurityTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/api/Jwt/JwtSecurityTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/api/Jwt/JwtSecurityTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +28,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="LoginFeatures" />
+        <entry key="$PROJECT_DIR$" value="Testing" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -98,7 +95,7 @@
       <recent name="com.example.springboot_grupparbete.Controllers" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.SpringBootGrupparbeteApplication">
+  <component name="RunManager" selected="JUnit.JwtSecurityTests.existentUserCanGetTokenAndAuthentication">
     <configuration name="JwtSecurityTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Api" />
       <extension name="coverage">
@@ -186,8 +183,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.JwtSecurityTests" />
         <item itemvalue="JUnit.JwtSecurityTests.existentUserCanGetTokenAndAuthentication" />
+        <item itemvalue="JUnit.JwtSecurityTests" />
         <item itemvalue="JUnit.JwtTesting" />
         <item itemvalue="JUnit.JwtSecurityTests.getCustomersWithJWT" />
         <item itemvalue="JUnit.JwtSecurityTests.getCustomersWithoutJWT" />
