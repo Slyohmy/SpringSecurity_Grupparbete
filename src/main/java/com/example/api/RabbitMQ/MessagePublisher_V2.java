@@ -10,17 +10,17 @@ import java.util.Date;
 import java.util.UUID;
 
 @RestController
-public class MessagePublisher {
+public class MessagePublisher_V2 {
 
     @Autowired
     private RabbitTemplate template;
 
     @PostMapping("/publish")
-    public String publishMessage(@RequestBody CustomMessage message) {
+    public String publishMessage(@RequestBody CustomMessage_V2 message) {
         message.setMessageId(UUID.randomUUID().toString());
         message.setMessageDate(new Date());
-        template.convertAndSend(MQConfig.EXCHANGE,
-                MQConfig.ROUTING_KEY, message);
+        template.convertAndSend(MQConfig_V2.EXCHANGE,
+                MQConfig_V2.ROUTING_KEY, message);
 
         return "Message Published";
     }

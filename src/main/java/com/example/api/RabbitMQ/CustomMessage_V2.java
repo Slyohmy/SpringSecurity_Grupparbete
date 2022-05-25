@@ -1,22 +1,26 @@
 package com.example.api.RabbitMQ;
 
-
 import java.util.Date;
 
-public class CustomMessage {
+public class CustomMessage_V2 {
 
     private String messageId;
     private String message;
     private Date messageDate;
 
-    public CustomMessage() {
+    public CustomMessage_V2() {
     }
 
-    public CustomMessage(String messageId, String message, Date messageDate) {
+    public CustomMessage_V2(String message) {
+        this.message = message;
+    }
+
+    public CustomMessage_V2(String messageId, String message, Date messageDate) {
         this.messageId = messageId;
         this.message = message;
         this.messageDate = messageDate;
     }
+
 
     public String getMessageId() {
         return messageId;
